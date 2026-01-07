@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hostel / PG Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Hostel / PG Room Booking</h1>
+  <p>Simple, affordable, student-friendly stays</p>
+</header>
+
+<section class="rooms">
+  <h2>Available Rooms</h2>
+
+  <div class="room-card">
+    <h3>Room 101</h3>
+    <p>Type: Single</p>
+    <p>Price: ₹5000 / month</p>
+    <button onclick="selectRoom('101')">Book Now</button>
+  </div>
+
+  <div class="room-card">
+    <h3>Room 102</h3>
+    <p>Type: Double</p>
+    <p>Price: ₹8000 / month</p>
+    <button onclick="selectRoom('102')">Book Now</button>
+  </div>
+
+</section>
+
+<section class="booking">
+  <h2>Book Your Room</h2>
+
+  <input type="text" id="name" placeholder="Your Name">
+  <input type="text" id="phone" placeholder="Phone Number">
+  <input type="text" id="room" placeholder="Room Number" readonly>
+  <input type="date" id="date">
+  <input type="number" id="days" placeholder="Number of Days">
+
+  <button onclick="bookRoom()">Confirm Booking</button>
+
+  <p id="message"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
